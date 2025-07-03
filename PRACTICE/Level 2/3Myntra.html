@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Myntra Bag</title>
+    <style>
+        #a{
+            background-color: aquamarine;
+            border: 0px;
+            border-radius: 20px;
+        }
+        #b{
+            padding: 2px 30px 2px 30px;
+            border-radius: 5px;
+            border:1px solid black;
+            text-transform: uppercase;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #c{
+            background-color: aquamarine;
+            border: 0px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Myntra Bag</h1>
+    <button id="a" onclick="bag=bag+1; document.querySelector('#cart').innerText = `Your bag has ${bag} items`;
+">Add to Bag</button>
+
+    <button id="b" onclick="bag=bag-1; document.querySelector('#cart').innerText = `Your bag has ${bag} items`;"
+>Move to Wishlist</button>
+
+    <button id="c" onclick="bag=bag+2; document.querySelector('#cart').innerText = `Your bag has ${bag} items`;"
+>Add 1+1 Sale Item</button>
+
+    <h2 id="cart"></h2>
+
+    <script>
+        let bag=0;
+        document.querySelector('#cart').innerText = `Your bag has ${bag} items`;
+    </script>
+    
+</body>
+</html>
