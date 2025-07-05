@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let age=21;
+        let userMessage;
+        if(age<18){
+            userMessage='You can drive';
+        }
+        else{
+            userMessage='You cannot drive';
+        }
+        document.querySelector('#a').innerText=`${userMessage}`
+    </script>
+</body>
+</html>
