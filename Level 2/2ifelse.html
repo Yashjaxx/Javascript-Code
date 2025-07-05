@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a"></h1>
+    <p id="b"></p>
+    <script>
+        let age=21;
+        document.querySelector('#a').innerText=`Your age is ${age}`;
+        
+        if(age>18){
+            document.querySelector('#b').innerText=`You will drive.`;
+        }
+        else{
+            document.querySelector('#b').innerText=`You will not drive.`;
+        }
+    </script>
+</body>
+</html>
